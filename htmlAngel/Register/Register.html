@@ -35,24 +35,26 @@
     <input type="password" id="confirm_password" placeholder="Confirm Password" required>
 
 
+
+
+    <script>
+        var password = document.getElementById("inputPassword")
+        , confirm_password = document.getElementById("confirm_password");
+
+        function validatePassword(){
+        if(password.value != confirm_password.value) {
+          confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+          confirm_password.setCustomValidity('');
+        }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+    </script>
+
     <br><br>
     <input type="submit" value="Register">
-    
-    <script>
-    var password = document.getElementById("inputPassword")
-    , confirm_password = document.getElementById("confirm_password");
-
-    function validatePassword(){
-    if(password.value != confirm_password.value) {
-      confirm_password.setCustomValidity("Passwords Don't Match");
-    } else {
-      confirm_password.setCustomValidity('');
-    }
-    }
-
-    password.onchange = validatePassword;
-    confirm_password.onkeyup = validatePassword;
-    </script>
   </form>
 </div>
 
