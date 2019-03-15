@@ -16,5 +16,9 @@ iframe{
 }
 h1{
   text-align: center;
-  
+
+}
+img{
+  width:128;
+  height:128;
 }
