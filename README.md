@@ -1,1 +1,4 @@
 # Hack-Pincher
+
+#Idea:
+------>
